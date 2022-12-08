@@ -11,10 +11,16 @@ How to solve this system, you might be timpted to say just invert the matrix:
 $$x=A^{-1}b$$
 while this might be a good approach for solving by hand, it is not in computers. To explain why we need to introduce the condtining and senstivity of the problem.
 Different approaches are used to solve this problem. They can be classified ass follows:
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-##
+1. Square linear system
+2. Rectaunglar linear system
+* Unordered sub-list. 
+
+##Conditioning and senstivity
+One of the most, if not the most, important terms in numerical analysis is Condtioning of a problem. To explain the concept imagine that you are claculating population of E-coli (type of bacteria) per hour. it is modeled that the growth is:
+$$No.population=2^t$$ 
+where t represents time is hours. Let's say you were to deteramine the population number after 26 hours, you will get:
+$$2^26=67108864$$
+Say that you made a mistake and calculated two minute later, 
+$$2^{26.03}-2^26=1,568,595$$
+a change by 0.03 in input has changed the output by ~1.5 milion. <br>
+**Condtion**=A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution.(the book)
