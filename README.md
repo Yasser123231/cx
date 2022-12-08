@@ -23,7 +23,7 @@ $$2^26=67108864$$
 Say that you made a mistake and calculated two minute later, 
 $$2^{26.03}-2^26=1,568,595$$
 a change by 0.03 in input has changed the output by ~1.5 milion. <br>
-**Defintion**=A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution. A problem is said to be sensitive, or ill-conditioned, if the relative change in the solution can be much larger than that in the input data.[^1].
+**Defintion**:"A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution. A problem is said to be sensitive, or ill-conditioned, if the relative change in the solution can be much larger than that in the input data".[^1].
 # Refernces
 [^1]:Heath, M. T. (2018). Scientific Computing. In Scientific computing: An introductory survey (p. 13). essay, Society for Industrial and Applied Mathematics. 
 [^2]:Chasin, awrence, &amp; Mowshowitz, D. (2000). Exponential growth. Retrieved December 7, 2022, from https://ccnmtl.columbia.edu/projects/biology/lecture1/expogrow.html 
