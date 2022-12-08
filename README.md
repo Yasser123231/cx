@@ -1,3 +1,8 @@
+---
+Name: Yasir Almulhim
+Topic: [4]
+Title: Solution methods for general linear systems.
+----
 # Solution methods for general linear systems.
 You are probably familiar with solving systems of linear equations, such as:
 $$y=3x+1$$
