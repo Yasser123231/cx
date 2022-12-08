@@ -1,5 +1,5 @@
 # cx
-#Solution methods for general linear systems.
+# Solution methods for general linear systems.
 You are probably familiar with solving systems of linear equations, such as:
 $$y=3x+1$$
 $$y=5x-4$$
@@ -16,11 +16,14 @@ Different approaches are used to solve this problem. They can be classified ass 
 * Unordered sub-list. 
 
 ##Conditioning and senstivity
-One of the most, if not the most, important terms in numerical analysis is Condtioning of a problem. To explain the concept imagine that you are claculating population of E-coli (type of bacteria) per hour. it is modeled that the growth is:
+One of the most, if not the most, important terms in numerical analysis is Condtioning of a problem. To explain the concept imagine that you are claculating population of E-coli (type of bacteria) per hour. it is modeled that the growth is[^2]:
 $$No.population=2^t$$ 
 where t represents time is hours. Let's say you were to deteramine the population number after 26 hours, you will get:
 $$2^26=67108864$$
 Say that you made a mistake and calculated two minute later, 
 $$2^{26.03}-2^26=1,568,595$$
 a change by 0.03 in input has changed the output by ~1.5 milion. <br>
-**Condtion**=A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution.(the book)
+**Defintion**=A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution. A problem is said to be sensitive, or ill-conditioned, if the relative change in the solution can be much larger than that in the input data.[^1].
+# Refernces
+[^1]:Heath, M. T. (2018). Scientific Computing. In Scientific computing: An introductory survey (p. 13). essay, Society for Industrial and Applied Mathematics. 
+[^2]:Chasin, awrence, &amp; Mowshowitz, D. (2000). Exponential growth. Retrieved December 7, 2022, from https://ccnmtl.columbia.edu/projects/biology/lecture1/expogrow.html 
