@@ -21,9 +21,22 @@ $$No.population=2^t$$
 where t represents time is hours. Let's say you were to deteramine the population number after 26 hours, you will get:
 $$2^26=67108864$$
 Say that you made a mistake and calculated two minute later, 
-$$2^{26.03}-2^26=1,568,595$$
+$$2^{26.03}-2^{26}=1,568,595$$
 a change by 0.03 in input has changed the output by ~1.5 milion. <br>
 **Defintion**:"A problem is said to be insensitive, or well-conditioned, if a given relative change in the input data causes a reasonably commensurate relative change in the solution. A problem is said to be sensitive, or ill-conditioned, if the relative change in the solution can be much larger than that in the input data".[^1].
+
+## Conditioning of Linear Systems 
+to deteramine weather Ax=b is well-condtioned we compute the **condition number**: 
+$$condtion(A)\equiv norm(A)\cdot norm(A^{-1}), \text{A has an inverse}$$
+if A does not have an inverse, then by definition:
+$$condtion(A)=\infty $$
+The closer the number to 1 the better conditioned the problem is. 
+
+## Gauss Elimination Method
+Gauss Elimination Method or sometimes called LU Factorization is a way of reducing the matrix to un upper or lower triangular matrix.   
+
+
+
 # Refernces
 [^1]:Heath, M. T. (2018). Scientific Computing. In Scientific computing: An introductory survey (p. 13). essay, Society for Industrial and Applied Mathematics. 
 [^2]:Chasin, awrence, &amp; Mowshowitz, D. (2000). Exponential growth. Retrieved December 7, 2022, from https://ccnmtl.columbia.edu/projects/biology/lecture1/expogrow.html 
