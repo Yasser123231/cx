@@ -33,9 +33,19 @@ $$condtion(A)=\infty $$
 The closer the number to 1 the better conditioned the problem is. 
 
 ## Gauss Elimination Method
-Gauss Elimination Method or sometimes called LU Factorization is a way of reducing the matrix to un upper or lower triangular matrix.   
-<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206344142-ae55f427-ce65-4ab4-8e0e-e44275beb7ef.jpeg" height="100" width="250" ></a> <br>
-<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206344943-a328c3a6-1432-444a-a710-0b00c8be2e84.jpeg" height="100" width="250" ></a> <br>
+Gauss Elimination Method or sometimes called LU Factorization is a way of reducing the matrix to un upper or lower triangular matrix. From which we can use backward susbtitation or forward subsitation ,respectively.<br>
+<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206345759-bbf6d73b-d81a-414e-9492-000a0e309b54.jpeg" height="400" width="250" ></a> <br>
+#### How we do it?
+first we will define
+$$m_k=a_i/a_k, i=k+1,...,n$$
+$$M_k=I-[0,...,0,m_{k+1},...,m_n]e_k, \text{where ek is the kth coulmn of the identity matrix}$$
+$$M_{n-1}...M_{1}Ax=M_{n-1}...M{1}b$$
+$$M_{n-1}...M_{1}Ax=\text{Upper Trinagular Matrix}=U$$
+Altough the method seems overwhelming as first, but if you apply it at system it would be much more clearer (See Heath, Scientific Computing textbook example 2.13)
+the only thing left is to preform backward substitation:
+$$x_i= {(b_n-\sum_{j=i+1}^{n}(u_{ij}x_j))}/{u_{ii}}$$
+where i goes from zero to n-1 [^3]
+
 
 
 # Refernces
