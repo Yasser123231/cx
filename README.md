@@ -34,9 +34,8 @@ The closer the number to 1 the better conditioned the problem is.
 
 ## Gauss Elimination Method
 Gauss Elimination Method or sometimes called LU Factorization is a way of reducing the matrix to un upper or lower triangular matrix.   
-<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206344142-ae55f427-ce65-4ab4-8e0e-e44275beb7ef.jpeg" align="left" height="100" width="250" ></a>
-
-
+<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206344142-ae55f427-ce65-4ab4-8e0e-e44275beb7ef.jpeg" height="100" width="250" ></a> <br>
+<a href="url"><img src="https://user-images.githubusercontent.com/119548062/206344943-a328c3a6-1432-444a-a710-0b00c8be2e84.jpeg" height="100" width="250" ></a> <br>
 
 
 # Refernces
